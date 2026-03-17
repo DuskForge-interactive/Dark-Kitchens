@@ -1,0 +1,64 @@
+
+---
+
+## `.gitignore`
+
+```gitignore
+# Dependencias
+/vendor/
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+
+# Configuración sensible
+/config/database.php
+/config/config.local.php
+
+# Logs
+*.log
+logs/
+storage/logs/
+tmp/logs/
+
+# Caché y temporales
+/cache/
+tmp/
+temp/
+*.tmp
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Configuración de editores
+.vscode/
+.idea/
+
+# Archivos de pruebas locales
+/phpunit.result.cache
+
+# Composer
+composer.lock
+
+# Archivos subidos por usuarios
+/uploads/
+/public/uploads/
+/storage/uploads/
+
+# Backups y dumps
+*.sql
+*.sqlite
+*.bak
+*.backup
+
+# Node si llegas a usar frontend auxiliar
+/node_modules/
+
+# Archivos de sesión
+sessions/
+
+# Archivos generados
+/dist/
+/build/
