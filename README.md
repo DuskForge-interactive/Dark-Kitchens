@@ -45,3 +45,11 @@ Desarrollar una aplicación web en PHP que permita gestionar el menú, registrar
 - Listado de pedidos pendientes para cocina.
 - Cambio de estado de pedidos.
 - Panel básico de administración.
+
+## Uso de Artisan
+Como el proyecto corre en Docker, no necesitas tener PHP instalado. Usa el comando `exec` para hablar con el contenedor:
+
+```bash
+docker compose up -d
+docker compose exec app php artisan [comando]
+```
